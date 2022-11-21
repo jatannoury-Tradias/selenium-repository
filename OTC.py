@@ -16,8 +16,11 @@ password=driver.find_element(By.NAME,"password")
 password.send_keys("veP7gPnojxk!5")
 
 
-login_button=password=driver.find_element(By.XPATH,"//*[@id='__next']/div[1]/div/div/div[2]/div[2]/div/div[2]/div/button")
+login_button=driver.find_element(By.XPATH,"//*[@id='__next']/div[1]/div/div/div[2]/div[2]/div/div[2]/div/button")
 driver.implicitly_wait(5)
 login_button.click()
+driver.implicitly_wait(5)
+
+
 
 time.sleep(10)
